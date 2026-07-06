@@ -1,0 +1,68 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# vscode
+*.vscode*
+
+# build folder
+build/
+Release/
+
+# pycache
+__pycache__/
+
+# third_party
+third_party/
+cmake_example
+data/
+
+# logging
+*.log
+*.npz
+
+# files
+output_*/
+output/
+model_weights/
+
+.env
+api_keys.py
+sam3/
+lockfiles
+
+ovon/*
+ompl-1.7.0/*
+
+topdown*.png
+test.py
+navigation_output/*
