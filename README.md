@@ -35,7 +35,7 @@ task-specific policy training or fine-tuning.
 Clone the repository recursively so third-party modules are available:
 
 ```bash
-git clone --recursive <repo_url> openfrontier
+git clone --recursive git@github.com:cvg/OpenFrontier.git openfrontier
 cd openfrontier
 ```
 
@@ -54,16 +54,27 @@ instructions for SAM3-specific environment and checkpoint requirements.
 #### Installation
 ```bash
 cd third_party/sam3
-conda create -n sam3 python=3.12
-conda deactivate
+conda create -n sam3 python=3.12 -y
 conda activate sam3
 python -m pip install --force-reinstall "setuptools<82"
 pip install -e .
 pip install -e ".[notebooks]"
 pip install flask
+cd ../..
 ```
 
-#### Run server in second window 
+If starting the server fails with `RuntimeError: The NVIDIA driver on your
+system is too old`, the default PyTorch wheel was built for a newer CUDA than
+your driver supports. Install a build matching your driver's CUDA version
+(shown by `nvidia-smi`), e.g. for CUDA 12.8:
+
+```bash
+pip install --force-reinstall torch torchvision --index-url https://download.pytorch.org/whl/cu128
+```
+
+#### Run server in second window
+From the repository root:
+
 ```bash
 conda activate sam3
 python sam3_server.py
