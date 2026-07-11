@@ -13,14 +13,20 @@
   <h2 align="center">
     <p>RSS 2026</p>
     <a href="https://arxiv.org/abs/2603.05377" align="center">ArXiv</a> |
-    <a href="https://boysun045.github.io/OpenFrontier-Project/" align="center">Webpage</a>
+    <a href="https://boysun045.github.io/OpenFrontier-Project/" align="center">Webpage</a> |
+    <a href="https://www.youtube.com/watch?v=iZt5yWM9tIs" align="center">Video</a>
   </h2>
 </p>
 
-OpenFrontier is a zero-shot navigation framework that treats navigation as sparse
-subgoal identification and reaching. It uses visual frontiers as semantic
-anchors for vision-language priors, enabling goal-conditioned navigation without
-task-specific policy training or fine-tuning.
+<p align="center">
+  <img src="assets/teaser.jpg" alt="OpenFrontier teaser" width="100%">
+</p>
+
+Open-world navigation requires robots to pursue flexible goals in complex
+environments without task-specific training. OpenFrontier achieves this
+zero-shot by using visual frontiers as semantic anchors: sparse navigation
+targets detected in RGB, scored by an off-the-shelf VLM against the language
+goal, and maintained in 3D for global planning.
 
 ## Quick Start
 
