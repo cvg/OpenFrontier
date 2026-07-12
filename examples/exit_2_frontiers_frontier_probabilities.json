@@ -1,0 +1,18 @@
+{
+    "A": [
+        0.2,
+        "Leads to an interior, unmarked unknown space, unlikely to be a direct exit or part of a designated exit route."
+    ],
+    "B": [
+        0.1,
+        "A closed, unmarked door to an unknown space, offering no visual cues of being an exit."
+    ],
+    "C": [
+        0.7,
+        "Part of a marked exit route (indicated by the 'EXIT' sign at D), leading to stairs which are common components of exit strategies in multi-story buildings for longer-term navigation."
+    ],
+    "D": [
+        0.9,
+        "Directly under an 'EXIT' sign, indicating a designated exit route and the most immediate path towards an exit."
+    ]
+}

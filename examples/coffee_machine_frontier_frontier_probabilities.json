@@ -1,0 +1,26 @@
+{
+    "A": [
+        0.9,
+        "Frontier is within a visible kitchen area, a highly probable location for a coffee machine."
+    ],
+    "B": [
+        0.6,
+        "Leads around a corner adjacent to the kitchen, potentially revealing more kitchen space or an adjacent utility area that might house a coffee machine."
+    ],
+    "C": [
+        0.4,
+        "Leads into a distinct, largely unknown room or area. While no immediate cues are present, considering longer-term exploration and the unknown nature, there's a moderate chance."
+    ],
+    "D": [
+        0.1,
+        "Leads into a hallway or a room with a tiled floor; this area does not appear to be a kitchen or a common place for a coffee machine."
+    ],
+    "E": [
+        0.05,
+        "Represents exploring vertical space within an existing doorway; highly unlikely to lead to a coffee machine directly."
+    ],
+    "F": [
+        0.1,
+        "Leads into a hallway or a room with a tiled floor, similar to D; this area does not appear to be a kitchen."
+    ]
+}
